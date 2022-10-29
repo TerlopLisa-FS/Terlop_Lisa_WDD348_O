@@ -12,5 +12,7 @@ const FeaturedDisplay = (props) => {
 export default FeaturedDisplay;
 
 const styles = {
-
+    container: {
+        display: 'flex'
+    }
 }
