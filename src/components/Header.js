@@ -6,7 +6,7 @@ import MyAvatar from './MyAvatar';
 import {FaSearch} from 'react-icons/fa';
 import MyIcon from './Icon';
 
-function Header(){
+const Header = () =>{
     return (
         <header style={styles.myHeader}>
           <div style={styles.left}>

@@ -1,25 +1,23 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-function Nav(){
-    return(
-        <nav style={styles.container}>
-            <Link to='/home'>Home</Link>
-            <Link to='/about'>About</Link>
-            <Link to='/featured'>Featured</Link>
-        </nav>
-    )
-}
-export default Nav;
+import React from "react";
+import { Outlet, Link } from "react-router-dom";
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import Container from 'react-bootstrap/Container';
 
-const styles = {
-    container: {
-        display: 'flex',
-        flexDirection: 'column',
-        position: 'relative',
-        alignSelf: 'stretch',
-        fontSize: '1.5rem',
-        backgroundColor: 'black',
-        padding: '2rem',
-        color: 'white'
-    }
-}
+const Navigation = () => (
+    <div>
+        <Navbar bg="dark" variant="dark" className="navbar navbar-expand-lg">
+            <Container>
+                <Link to="/" className="navbar-brand text-decoration-none">My Collectible</Link>
+                <Nav className="justify-content-end">
+                    <Link to="/home" className="nav-link">Home</Link>
+                    <Link to="/about" className="nav-link">About</Link>
+                    <Link to="/about" className="nav-link">Featured</Link>
+                </Nav>
+            </Container>
+        </Navbar>
+        <Outlet />
+    </div>
+);
+
+export default Navigation;

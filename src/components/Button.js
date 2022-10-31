@@ -19,7 +19,7 @@ const styles = {
         border: 'none',
         cursor: 'pointer',
         margin: '1rem',
-        width: '5rem',
+        width: '20rem',
         hover: '#650038'
     }
 }
