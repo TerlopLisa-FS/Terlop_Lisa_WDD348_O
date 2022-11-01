@@ -36,7 +36,7 @@ class Featured extends React.Component {
               {
                 items.map((item) => ( 
                 <article style={styles.container} key = { item.id } >
-                  <img src= {item.animeImg} alt="Anime Image" style={styles.img}/>  
+                  <img src= {item.animeImg} alt="Anime" style={styles.img}/>  
                    <h3>Anime: { item.animeTitle }</h3>, 
                     <p></p>,
                     <Button btnText="View More"/>
