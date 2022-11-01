@@ -1,28 +1,18 @@
 import React from 'react';
-import {HashRouter, Routes, Route} from 'react-router-dom';
 import ReactDOM from 'react-dom/client';
-// Bootstrap CSS
-import "bootstrap/dist/css/bootstrap.min.css";
-// Bootstrap Bundle JS
-import "bootstrap/dist/js/bootstrap.bundle.min";
+import {BrowserRouter} from 'react-router-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Home from './components/Home';
-import About from './pages/About';
-import Featured from './components/Featured'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <HashRouter>
-    <Routes>
-      <Route exact path="/" element={<App />} />
-      <Route exact path="/help" element={<Home />} />
-      <Route exact path="/about" element={<About />} />
-      <Route exact path="/about" element={<Featured />} />
-    </Routes>
-    </HashRouter>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </React.StrictMode>
 );
 
