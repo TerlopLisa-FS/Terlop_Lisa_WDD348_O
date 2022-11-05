@@ -1,51 +1,33 @@
 import React from "react";
-import Button from './Button';
+import { useNavigate} from 'react-router-dom';
 
-class Featured extends React.Component {
-   
-    // Constructor 
-    constructor(props) {
-        super(props);
-   
-        this.state = {
-            items: [],
-            DataisLoaded: false
-        };
-    }
-   
-    // ComponentDidMount is used to
-    // execute the code 
-    componentDidMount() {
-        fetch(
-          "https://gogoanime.consumet.org/recent-release")
-            .then((res) => res.json())
-            .then((json) => {
-                this.setState({
-                    items: json,
-                    DataisLoaded: true
-                });
-            })
-    }
-    render() {
-        const { DataisLoaded, items } = this.state;
-        if (!DataisLoaded) return <div>
-            <h1> Loading.... </h1> </div> ;
-   
+function Featured ({data}) {
+      const navigate = useNavigate();
+      const navigateToAnime = () => {
+        navigate('AnimeCollection');
+      }
         return (
-        <div>
-              {
-                items.map((item) => ( 
-                <article style={styles.container} key = { item.id } >
-                  <img src= {item.animeImg} alt="Anime" style={styles.img}/>  
-                   <h3>Anime: { item.animeTitle }</h3>, 
-                    <p></p>,
-                    <Button btnText="View More"/>
-                    </article>
-                ))
-            }
-        </div>
+            <div>
+            <div className="dataResult">
+            {data.map((value, key) => {
+                return ( 
+                 
+                  <row style={styles.row}>                 
+                  <article style={styles.container}>
+                    <img style={styles.img} src={value.collectionImage} alt="Featured collection"/>
+                    <h1>{value.collectionTitle}</h1>
+                    <p>{value.description}</p>
+                    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                    <button onClick={navigateToAnime} id="button" class="btn btn-primary btn-lg px-4 gap-3">View More</button>
+                    </div>
+                  </article>
+                  </row>
+                  
+                );
+            })}
+            </div>
+            </div>
     );
-}
 }
    
 export default Featured;
@@ -54,11 +36,20 @@ const styles = {
   container: {
     display: 'flex',
     flexDirection: 'column',
-    marginLeft: '40%'
+    flexWrap: 'flex-wrap',
+    width: '400px',
+    padding: '2%',
+    justifyContent: 'space-between',
+    borderRadius: '5px',
+    boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
+    margin: '5%'
   },
   img: {
     height: '20rem',
     width: '20rem'
        
+  },
+  row: {
+    display: 'inline-block',
   }
 }

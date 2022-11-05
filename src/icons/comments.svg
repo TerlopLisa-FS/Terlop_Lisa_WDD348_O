@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="16" viewBox="0 0 48 16">
+  <g id="comments" style="mix-blend-mode: darken;isolation: isolate">
+    <text id="_120" data-name="120" transform="translate(24 13)" fill="#7f5785" font-size="14" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="0" y="0">120</tspan></text>
+    <path id="Chat" d="M5,8A.945.945,0,0,0,6,9h4a1,1,0,0,0,1-1,.945.945,0,0,0-1-1H6A1,1,0,0,0,5,8ZM0,5A4.951,4.951,0,0,1,5,0h6a4.951,4.951,0,0,1,5,5V15a.945.945,0,0,1-1,1H5a4.951,4.951,0,0,1-5-5Z" fill="#7f5785" fill-rule="evenodd"/>
+  </g>
+</svg>

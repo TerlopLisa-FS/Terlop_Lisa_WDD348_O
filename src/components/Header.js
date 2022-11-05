@@ -4,7 +4,7 @@ import Image from '../images/mc_small_logo.png';
 import Icon from './Icon';
 import MyAvatar from './MyAvatar';
 import {FaSearch} from 'react-icons/fa';
-import MyIcon from './Icon';
+import Form from 'react-bootstrap/Form';
 
 const Header = () =>{
     return (
@@ -12,13 +12,16 @@ const Header = () =>{
           <div style={styles.left}>
             <Icon MyIcon={Image}/> 
           </div>
-          <div style={styles.searchCont}>
+            <Form>
+            <div style={styles.searchCont}>
             <span style={styles.inputIcon}><FaSearch/></span>
             <input
             type="text"
             style={styles.inputwithIcon}
-            placeholder="search" />
-          </div>
+            placeholder="search collections" />
+            <button id='button' variant='primary' type='submit'>Search</button>
+            </div>
+            </Form>
           <div style={styles.rightSide}>
             <MyAvatar AvatarIcon={ImageURL}/>
           </div>
@@ -30,7 +33,6 @@ export default Header
 const styles = {
   myHeader: {
     padding:'1%',
-    backgroundColor: 'white',
     color: 'rgb(163,173,194)',
     display: 'flex',
     flexDirection: 'row',
@@ -57,15 +59,17 @@ const styles = {
     display: 'flex',
     flexDirection: 'row',
     borderRadius: '2px',
-    width: '40%',
-    height: '20%'
+    width: '50rem',
+    marginLeft: '1rem',
+    height: '3.5rem',
   },
   inputIcon: {
     background: '#ddd',
     padding: '10px',
     display: 'flex',
     alignItems: 'center',
-    fontSize: '1rem'
+    fontSize: '1rem',
+    color: '#650038'
   },
   inputwithIcon: {
     border: 'none',

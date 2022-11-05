@@ -1,8 +1,68 @@
+/* Google Fonts ======================== */
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&family=Neucha&family=PT+Sans+Caption:wght@400;700&display=swap");
+/* Typography Defaults ================= */
+html {
+  font-size: 80%;
+}
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #BEB1D7;
+  background: no-repeat center;
+  background-color: #BEB1D7;
+  background-color: 'opacity 1';
+  color: #2C0834;
+  min-height: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+h1 {
+  font-family: 'Baloo Thambi 2', cursive;
+  font-weight: bolder;
+  background-color: #BBE4D9;
+  color: #650038;
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-family: 'Baloo Thambi 2', cursive;
+  font-weight: bolder;
+  color: #650038;
+  text-align: center;
+  font-size: 2rem;
+  margin: 2rem;
+}
+
+p {
+  font-family: 'Neucha', cursive;
+  font-weight: bold;
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 2.5rem;
+}
+nav {
+  color: gray;
+  font-size: 2rem;
+  margin-left: 1rem;
+  padding: 1.5rem;
+}
+
+ #li {
+  padding: 2rem;
+  color: #B96FAE;
+}
+
+#li a:hover {
+  color: #650038;
+}
+#card {
+  font-family: 'neucha';
+  color: #650038;
+}
+#button {
+  font-family: 'neucha';
+  color: #fff;
+  background-color: #B96FAE;
+  border-color: #B96FAE;
 }

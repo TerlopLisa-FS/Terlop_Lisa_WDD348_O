@@ -1,8 +1,8 @@
 import React from 'react';
   
 const Footer = () => (
-  <footer className="footer">
-    <p>This is react sticky footer!!</p>
+  <footer className="footer" style={styles.footer}>
+    <p style={styles.p} id="copyright">&copy;2022 MyCollectible. All Rights Reserved. Terms of use and Privacy Policy</p>
   
   </footer>
 );
@@ -10,23 +10,20 @@ const Footer = () => (
 export default Footer;
 
 const styles = {
-
-body: {
-    margin: 0,
-    height:'1000px'
-   },
-   App: {
-    color: '#228b22',
-    textAlign: 'center',
-   },
    footer: {
-    backgroundColor: 'green',
-    borderTop:'2px solid red',
-    position: 'fixed',
+    backgroundColor: '#BBE4D9',
+    height: '8%',
     width: '100%',
+    position: 'fixed',
     bottom: '0',
     color: 'white',
-    fontSize: '25px'
+    fontSize: '16px',
+    textAlign: 'center'
    
+},
+p: {
+  opacity: '50%',
+  fontSize: '1.5rem',
+  margin: '1.5rem'
 }
 }
