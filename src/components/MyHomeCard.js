@@ -33,6 +33,7 @@ const styles = {
     alignContent: 'center',
     lineHeight: '1.7',
     fontSize: '2rem',
+    textAlign: 'left'
 
   },
   title: {

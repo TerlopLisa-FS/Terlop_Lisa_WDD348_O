@@ -11,9 +11,10 @@ body {
   background-color: #BEB1D7;
   background-color: 'opacity 1';
   color: #2C0834;
-  min-height: fit-content;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  padding-bottom: 60px;
 }
 h1 {
   font-family: 'Baloo Thambi 2', cursive;

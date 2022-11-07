@@ -10,8 +10,7 @@ function Featured ({data}) {
             <div>
             <div className="dataResult">
             {data.map((value, key) => {
-                return ( 
-                 
+                return (  
                   <row style={styles.row}>                 
                   <article style={styles.container}>
                     <img style={styles.img} src={value.collectionImage} alt="Featured collection"/>
@@ -42,11 +41,12 @@ const styles = {
     justifyContent: 'space-between',
     borderRadius: '5px',
     boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
-    margin: '5%'
+    margin: '5%',
+    marginLeft: '60px'
   },
   img: {
     height: '20rem',
-    width: '20rem'
+    width: '30rem'
        
   },
   row: {

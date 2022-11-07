@@ -77,6 +77,7 @@ const styles = {
     display: 'flex',
     flexDirection: 'row',
     flexWrap: 'flex-wrap',
+    marginLeft:'60px'
   },
   img: {
     height: '20rem',

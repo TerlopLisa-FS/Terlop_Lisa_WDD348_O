@@ -33,28 +33,43 @@ class Featured extends React.Component {
    
         return (
 
-        <div>
+        <div class="row">
+          <div class="col-lg-6">
+
           <article style={styles.myArticle}>
+          <h1>The Anime Collection</h1>
                     <img style = {styles.img} src={AnimeImg} alt="anime collection"/>
-                    <h1>The Anime Collection</h1>
                     <p id ="anime-description">Anime collectors unite! Join us in our love for everything Anime!</p>
                     <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
                     <button id="button" class="btn btn-primary btn-lg px-4 gap-3">Follow</button>
                     </div>
                     </article>
+                    </div>
               {
                 items.map((item) => ( 
+                  <div class="col-lg-6">
+                    <div class="card">
+                    <div class="card-body">
+                    <div class="card bg-dark text-white">
+                    
                 <article style={styles.container} key = { item.id } >
-                  <img src= {item.animeImg} alt="Anime" style={styles.img}/>  
-                   <h3>Anime: { item.animeTitle }</h3>, 
+                  <img class="card-img" src= {item.animeImg} alt="Anime" style={styles.img}/> 
+                  <div class="card-img-overlay"> 
+                   <h3 style={styles.h3}>Anime: { item.animeTitle }</h3>, 
                     <p></p>
-                    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                    <div class="d-grid gap-2 d-sm-flex justify-content-md-center">
                     <button id="button" class="btn btn-primary btn-lg px-4 gap-3">View More</button>
                     <button id="button" class="btn btn-primary btn-lg px-4 gap-3">Follow</button>
                     </div>
+                    </div>
                     </article>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
                 ))
             }
+            
         </div>
                 );
                 }
@@ -69,12 +84,18 @@ const styles = {
     marginLeft: '40%'
   },
   img: {
-    height: '20rem',
-    width: '20rem'
+    height: '40rem',
+    width: '50rem',
+    alignContent: 'center',
+    opactiy: '50%'
        
   },
   myArticle: {
     display: 'flex',
     flexDirection: 'column'
+  },
+  h3: {
+    textAlign: 'center',
+    marinTop: '1rem'
   }
 }

@@ -12,10 +12,10 @@ export default Footer;
 const styles = {
    footer: {
     backgroundColor: '#BBE4D9',
-    height: '8%',
-    width: '100%',
     position: 'fixed',
-    bottom: '0',
+    bottom: 0,
+    width: '100%',
+    height: '60px',
     color: 'white',
     fontSize: '16px',
     textAlign: 'center'
