@@ -1,10 +1,11 @@
-import React from 'react';
+import {React} from 'react';
 import ImageURL from '../images/avatar.ico';
 import Image from '../images/mc_small_logo.png';
 import Icon from './Icon';
 import MyAvatar from './MyAvatar';
-import {FaSearch} from 'react-icons/fa';
 import Form from 'react-bootstrap/Form';
+import SearchBar from './SearchBar';
+import List from './ListData.json';
 
 const Header = () =>{
     return (
@@ -13,20 +14,18 @@ const Header = () =>{
             <Icon MyIcon={Image}/> 
           </div>
             <Form>
-            <div style={styles.searchCont}>
-            <span style={styles.inputIcon}><FaSearch/></span>
-            <input
-            type="text"
-            style={styles.inputwithIcon}
-            placeholder="search collections" />
-            <button id='button' variant='primary' type='submit'>Search</button>
+            <div>
+            <SearchBar placeholder="Search Collections" data={List}/>
+            </div>
+            <div className="dataResult">
             </div>
             </Form>
           <div style={styles.rightSide}>
             <MyAvatar AvatarIcon={ImageURL}/>
           </div>
         </header>
-    )
+                  
+    );
 }
 export default Header
 

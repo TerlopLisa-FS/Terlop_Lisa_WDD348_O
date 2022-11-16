@@ -34,7 +34,7 @@ const DateForm = props => {
 
       <form className="pt-5 d-flex justify-content-center flex-nowrap form-control form-control-lg" onSubmit={(e)=>e.preventDefault()}>
       Enter a date (YYYY-MM-DD) or Submit for today's picture 
-      <input ref={dateRef} onChange={dateChange} class="mx-3" type="date" defaultValue={makeDateString(today)} min="1995-06-20" max={makeDateString(today)} />
+      <input ref={dateRef} onChange={dateChange} className="mx-3" type="date" defaultValue={makeDateString(today)} min="1995-06-20" max={makeDateString(today)} />
       <button onClick={onPrev}>&lt;</button>
       <button onClick={ onNext }>&gt;</button>
       {/* <input type="submit" /> */}

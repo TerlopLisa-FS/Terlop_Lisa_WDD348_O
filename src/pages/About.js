@@ -24,8 +24,8 @@ function About() {
                 <p>
                 We also created an app so you can take MyCollectible with you wherever you go.
                 </p>
-                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                    <button id="button" class="btn btn-primary btn-lg px-4 gap-3">View More</button>
+                <div className="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                    <button id="button" className="btn btn-primary btn-lg px-4 gap-3">View More</button>
                     </div>
               </article>    
               <article style={styles.container}>
@@ -51,8 +51,8 @@ function About() {
                 cool collectons that you can browse to get
                 inspired.
                 </p>
-                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                    <button id="button" class="btn btn-primary btn-lg px-4 gap-3">Get Started</button>
+                <div className="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                    <button id="button" className="btn btn-primary btn-lg px-4 gap-3">Get Started</button>
                     </div>
               </article>    
       </row>

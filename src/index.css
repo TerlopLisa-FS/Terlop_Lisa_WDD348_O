@@ -6,15 +6,20 @@ html {
 }
 
 body {
-  background-color: #BEB1D7;
   background: no-repeat center;
-  background-color: #BEB1D7;
   background-color: 'opacity 1';
   color: #2C0834;
   min-height: 100vh;
+  min-width: 100vw;
   display: flex;
   flex-direction: column;
   padding-bottom: 60px;
+  padding: 0;
+  margin: 0;
+}
+.App{
+  align-items: center;
+  background-color: linear-gradient(90deg, #410076, #8820dd);
 }
 h1 {
   font-family: 'Baloo Thambi 2', cursive;
@@ -66,4 +71,67 @@ nav {
   color: #fff;
   background-color: #B96FAE;
   border-color: #B96FAE;
+}
+.searchInputs {
+  display: flex;
+}
+
+.search input {
+  background-color: white;
+  border: 0;
+  border-radius: 2px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  font-size: 18px;
+  padding: 15px;
+  height: 40px;
+  width: 300px;
+}
+
+.searchIcon {
+  height: 40px;
+  width: 50px;
+  background-color: white;
+  display: grid;
+  place-items: center;
+}
+
+input:focus {
+  outline: none;
+}
+.searchIcon svg {
+  font-size: 20px;
+}
+
+.dataResult {
+  margin-top: 5px;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.dataResult::-webkit-scrollbar {
+  display: none;
+}
+
+.dataResult .dataItem {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+.dataItem p {
+  margin-left: 10px;
+}
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: lightgrey;
+}
+
+#clearBtn {
+  cursor: pointer;
 }

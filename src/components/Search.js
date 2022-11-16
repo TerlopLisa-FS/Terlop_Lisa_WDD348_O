@@ -1,22 +1,45 @@
 import React from 'react';
 
-function SearchBar({placeholder, data}) {
+function Search({data}) { 
     return (
-        <div>
-            {/* <input type="text" placeholder={placeholder}/>
             <div className="dataResult">
             {data.map((value, key) => {
-                return (
-                    <div>
-                        <img src = {value.collectionImage} alt="collection"/>
-                        <p>{value.collectionTitle}</p>
-                        <p>{value.description}</p>
-                    </div> 
-                )
+                return (  
+                  <row style={styles.row}>                 
+                  <article style={styles.container}>
+                    <img style={styles.img} src={value.imageLink} alt="pokemon"/>
+                    <h1>{value.title}</h1>
+                    <p>{value.description}</p>
+                    <div className="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                    <button id="button" className="btn btn-primary btn-lg px-4 gap-3">View More</button>
+                    </div>
+                  </article>
+                  </row> 
+                );
             })}
-            </div> */}
-        </div>
-    )
+            </div>)
 }
 
-export default SearchBar;
+export default Search;
+
+const styles = {
+    container: {
+        alignContent: 'center',
+        padding: '10rem'
+      },
+      img: {
+        height: '30rem',
+        width: '35rem',
+        alignContent: 'center',
+        marginRight: '1rem'
+           
+      },
+      myArticle: {
+        display: 'flex',
+        flexDirection: 'column'
+      },
+      h3: {
+        textAlign: 'center',
+        marinTop: '1rem'
+      }
+}

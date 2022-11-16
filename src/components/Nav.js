@@ -6,7 +6,6 @@ const Navigation = () => (
     <Nav style ={styles.nav}>
         <Link id='li' to= '/home'>Home</Link>
         <Link id='li' to= '/about'>About</Link>
-        <Link id='li' to= '/featured'>Featured</Link>
     </Nav>
     
 );
