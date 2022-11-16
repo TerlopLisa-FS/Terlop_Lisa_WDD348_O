@@ -51,7 +51,7 @@ class Featured extends React.Component {
                     </div>
                     </div>
               {
-                items.map((item) => ( 
+                items[0].map((item) => ( 
                   <div className="col-lg-6">
                     <div className="card">
                     <div className="card-body">
