@@ -4,7 +4,7 @@ import GameRoom from '../images/game_room.jpeg';
 
 function About() {
     return (
-      <row style={styles.row}>                 
+      <div className="dataResult">           
       <article style={styles.container}>
         <img style={styles.img} src={GameCol1} alt="Game Collection"/>
         <h1>Who We Are</h1>
@@ -25,12 +25,13 @@ function About() {
                 We also created an app so you can take MyCollectible with you wherever you go.
                 </p>
                 <div className="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                    <button id="button" className="btn btn-primary btn-lg px-4 gap-3">View More</button>
+                    <button id="button" className="btn btn-primary btn-lg px-4 gap-3">Get Started</button>
                     </div>
-              </article>    
+              </article> 
+            
               <article style={styles.container}>
-        <img style={styles.img} src={GameRoom} alt="Game Room"/>
-        <h1>How to Get Started</h1>
+              <img style={styles.img} src={GameRoom} alt="Game Room"/>
+              <h1>How to Get Started</h1>
               <p>             
                 First things first, you are going to needto create an account by clicking the
                 Get started button down below :)
@@ -54,8 +55,8 @@ function About() {
                 <div className="d-grid gap-2 d-sm-flex justify-content-sm-center">
                     <button id="button" className="btn btn-primary btn-lg px-4 gap-3">Get Started</button>
                     </div>
-              </article>    
-      </row>
+              </article>  
+      </div>
     )
 }
 
@@ -63,24 +64,20 @@ export default About;
 
 const styles = {
   container: {
-    display: 'flex',
-    flexDirection: 'column',
-    flexWrap: 'flex-wrap',
-    width: '550px',
+    width: '600px',
+    height: '650px',
     padding: '2%',
     justifyContent: 'space-between',
     borderRadius: '5px',
     boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
-    marginLeft: '5%'
-  },
-  row: {
-    display: 'flex',
-    flexDirection: 'row',
-    flexWrap: 'flex-wrap',
-    marginLeft:'60px'
+    marginLeft: '5%',
+    backgroundColor: '#BEB1D7'
   },
   img: {
-    height: '20rem',
-    width: '35rem'
+    width: '100%',
+    height: '40%',
+    alignContent: 'center',
+    marginRight: '2rem'
+       
   }
 }

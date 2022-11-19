@@ -3,9 +3,6 @@ import ImageURL from '../images/avatar.ico';
 import Image from '../images/mc_small_logo.png';
 import Icon from './Icon';
 import MyAvatar from './MyAvatar';
-import Form from 'react-bootstrap/Form';
-import SearchBar from './SearchBar';
-import List from './ListData.json';
 
 const Header = () =>{
     return (
@@ -13,13 +10,13 @@ const Header = () =>{
           <div style={styles.left}>
             <Icon MyIcon={Image}/> 
           </div>
-            <Form>
+            
             <div>
-            <SearchBar placeholder="Search Collections" data={List}/>
+            <h1 style={styles.h1}>Welcome to My Collectible</h1>
             </div>
             <div className="dataResult">
             </div>
-            </Form>
+            
           <div style={styles.rightSide}>
             <MyAvatar AvatarIcon={ImageURL}/>
           </div>
@@ -32,12 +29,10 @@ export default Header
 const styles = {
   myHeader: {
     padding:'1%',
-    color: 'rgb(163,173,194)',
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    boxShadow: '1px 6px 1px 1px rgba(0, 0, 25, .1)'
 
   },
   left: {
@@ -84,5 +79,9 @@ const styles = {
   },
   rightIcons: {
 
+  },
+  h1: {
+    background: 'none',
+    marginLeft: '200px'
   }
 }

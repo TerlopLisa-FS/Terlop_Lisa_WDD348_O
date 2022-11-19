@@ -15,7 +15,7 @@ const styles = {
     position: 'fixed',
     bottom: 0,
     width: '100%',
-    height: '60px',
+    height: '50px',
     color: 'white',
     fontSize: '16px',
     textAlign: 'center'
