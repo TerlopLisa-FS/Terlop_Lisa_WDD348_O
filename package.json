@@ -2,7 +2,7 @@
   "name": "terlop-lisa-prw",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Terlop_Lisa_WDD348_O.github.io/FS-Project-Portfolio-4",
+  "homepage": "https://terloplisa-fs.github.io/Terlop_Lisa_WDD348_O/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",

@@ -1,5 +1,5 @@
 import React from "react";
-import {HashRouter, Routes, Route} from 'react-router-dom';
+import {HashRouter as Router, Route, Routes} from 'react-router-dom';
 import Header from './components/Header';
 import Home from "./components/Home";
 import About from './pages/About';
@@ -20,27 +20,23 @@ import PaintedPony from "./pages/PaintedPony";
 function App() {
         return (
         <div className = "App" style={{ backgroundImage:`url(${Background})`, height: '100vh', }}>
-          <Header/>
-            <Nav/>
-          <main>
-            <section>
-              <HashRouter>
-                <Routes>
-                <Route  exact path ='/' component = {<Home data={FeaturedData}/>}/>
-                <Route  exact path ='/home' component = {<Home data={FeaturedData}/>}/>
-                <Route  exact path ='/about' component = {<About/>}/>
-                <Route  exact path="/home/featured" component={<Featured/>}/>
-                <Route exact path="/animeOneCollection" component={<AnimeOne/>}/>
-                <Route exact path="/animeTwoCollection" component={<AnimeTwo/>}/>
-                <Route  exact path="/animeThreeCollection" component={<AnimeThree/>}/>
-                <Route exact path="/home/narutoCards" component= {<Naruto data={NarutoCards}/>}/>
-                <Route exact path="/home/paintedPonies" component={<PaintedPony data={PaintedPonies}/>}/>
+              <Router>
+              <Header/> 
+              <Nav/>
+              <Routes>
+                <Route  exact path ='/' element = {<Home data={FeaturedData}/>}/>
+                <Route  exact path ='/home' element = {<Home data={FeaturedData}/>}/>
+                <Route  exact path ='/about' element = {<About/>}/>
+                <Route  exact path="/home/featured" element={<Featured/>}/>
+                <Route exact path="/animeOneCollection" element={<AnimeOne/>}/>
+                <Route exact path="/animeTwoCollection" element={<AnimeTwo/>}/>
+                <Route  exact path="/animeThreeCollection" element={<AnimeThree/>}/>
+                <Route exact path="/home/narutoCards" element= {<Naruto data={NarutoCards}/>}/>
+                <Route exact path="/home/paintedPonies" element={<PaintedPony data={PaintedPonies}/>}/>
                 </Routes>
-              </HashRouter>
-            </section>
-            </main>
-            <Footer/>
-        </div>
+                <Footer/>
+              </Router>
+              </div>
     );
 }
    

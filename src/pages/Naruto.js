@@ -6,7 +6,7 @@ function Naruto ({data}){
             {
                 data.map((value) => {
                     return(
-                    <div style={styles.row}>
+                    <div style={styles.row} key ={value.id}>
                     <div style={styles.container} className="col-sm-6">
                     <div className="card">
                     <div className="card-body">

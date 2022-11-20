@@ -1,31 +1,31 @@
 [
     {
-        "title": "Naruto Card",
+        "id": 1,
         "cardImage" : "https://i.ebayimg.com/images/g/F7IAAOSw2f9gFrR4/s-l500.jpg"
 
     },
     {
-        "title": "Naruto Card",
+        "id": 2,
         "cardImage": "https://d1w8cc2yygc27j.cloudfront.net/-5673402740213339393/6303915451981824942.jpg"
        
     },
     {
-        "title": "Naruto Card",
+        "id": 3,
         "cardImage": "https://i.ebayimg.com/images/g/FyUAAOSwjT5dLTo-/s-l500.jpg"
         
     },
     {
-        "title": "Naruto Card",
+        "id": 4,
         "cardImage": "https://i.etsystatic.com/37109715/r/il/eed2ba/4079411918/il_fullxfull.4079411918_dchh.jpg"
         
     },
     {
-        "title": "Naruto Card",
+        "id": 5,
         "cardImage": "https://i.ebayimg.com/images/g/yiMAAOSwmkli4L6Q/s-l1600.jpg"
         
     },
     {
-        "title": "Naruto Card",
+        "id": 6,
         "cardImage": "https://i.ebayimg.com/images/g/du0AAOSwUvheSJ5V/s-l1600.jpg"
         
     }

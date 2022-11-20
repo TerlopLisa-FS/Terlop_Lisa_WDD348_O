@@ -49,7 +49,7 @@ animeThree() {
           <div className="card-body">
           <div className="card bg-dark text-white">
           <h1>The Anime Collection</h1>
-                    <img style = {styles.img} src='../images/anime_collection.png' alt="anime collection"/>
+                    <img style = {styles.img} src={AnimeImg} alt="anime collection"/>
                     <p id ="anime-description">Anime collectors unite! Join us in our love for everything Anime!</p>
                     <div className="d-grid gap-2 d-sm-flex justify-content-sm-center">
                     <button id="button" className="btn btn-primary btn-lg px-4 gap-3">Follow</button>

@@ -39,7 +39,7 @@ class AnimeTwo extends React.Component {
   <div className="card-img-overlay"> 
    <h3 style={styles.h3}>{ items[1].animeTitle }</h3>
    <p>{items[1].subOrDub}</p>
-             <a  style={styles.aTag} href={items[1].episodeUrl}> {items[1].episodeUrl}</a>
+    <a  style={styles.aTag} target="_blank" href={items[1].episodeUrl}> {items[1].episodeUrl}</a>
     <div className="d-grid gap-2 d-sm-flex justify-content-sm-center">
     <button id="button" className="btn btn-primary btn-lg px-4 gap-3">Follow</button>
     </div>
@@ -81,5 +81,22 @@ h3: {
 textAlign: 'center',
 marinTop: '1rem',
 color: '#2C0834'
-}
+},
+aTag: {
+    display: "block",
+    width: "115px",
+    height: "50px",
+    background: "#4E9CAF",
+    padding: "10px",
+    textAlign: "center",
+    borderRadius: "5px",
+    color: "white",
+    fontWeight: "bold",
+    lineHeight: "25px",
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    marginBottom: '50px',
+    textDecoration: 'none',
+    boxShadow: '1px 1px 1px black'
+  }
 }
