@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Terlop_Lisa_WDD348_O/static/css/main.0fd9d167.css",
-    "main.js": "/Terlop_Lisa_WDD348_O/static/js/main.3b5f57fd.js",
+    "main.js": "/Terlop_Lisa_WDD348_O/static/js/main.e878a2d4.js",
     "static/js/787.c78960d7.chunk.js": "/Terlop_Lisa_WDD348_O/static/js/787.c78960d7.chunk.js",
     "static/media/anime_collection.png": "/Terlop_Lisa_WDD348_O/static/media/anime_collection.bf3cb04985d692f3242e.png",
     "static/media/background_hero_image.png": "/Terlop_Lisa_WDD348_O/static/media/background_hero_image.ffb4e9f959f801a95a5a.png",
@@ -12,11 +12,11 @@
     "static/media/avatar.ico": "/Terlop_Lisa_WDD348_O/static/media/avatar.9cde0c4d9b919ad20543.ico",
     "index.html": "/Terlop_Lisa_WDD348_O/index.html",
     "main.0fd9d167.css.map": "/Terlop_Lisa_WDD348_O/static/css/main.0fd9d167.css.map",
-    "main.3b5f57fd.js.map": "/Terlop_Lisa_WDD348_O/static/js/main.3b5f57fd.js.map",
+    "main.e878a2d4.js.map": "/Terlop_Lisa_WDD348_O/static/js/main.e878a2d4.js.map",
     "787.c78960d7.chunk.js.map": "/Terlop_Lisa_WDD348_O/static/js/787.c78960d7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0fd9d167.css",
-    "static/js/main.3b5f57fd.js"
+    "static/js/main.e878a2d4.js"
   ]
 }
